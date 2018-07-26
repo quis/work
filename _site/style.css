@@ -1,0 +1,418 @@
+/* GENERAL */
+
+body {
+  font-family: 'acumin-pro', sans;
+/* 	font-family: 'pragmatica', sans; */
+	/* font-family: 'halyard-display', sans; */
+	/* font-family: 'campaign', sans; */
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size:100%;
+  line-height:1.5;
+}
+
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+img {
+   width:100%;
+   height: auto;
+   background-repeat:no-repeat;
+   background-size:cover;
+   overflow: hidden;
+ }
+
+/* HEADER */
+/* Notes on this section: should I use an image for the 'h' or text? Is there a way to hide the text from screen readers? */
+
+header {
+  padding-top: 30px;
+}
+
+header p::after {
+  content: " — ";
+  padding-right: 0.2em;
+}
+
+/* MAIN WRAPPER */
+main {
+  background-color: white;
+  margin: auto;
+  max-width: 960px;
+}
+
+/* Floats */
+
+.right {
+  display: block;
+  float: right;
+  text-align: left;
+}
+
+.left {
+  display: block;
+  float: left;
+  text-align: left;
+}
+
+/* .grid wraps row elements with a left and right margin */
+.grid {
+  margin: 0 3em 0 3em;
+}
+
+/* Rows create new rows of content */
+.row {
+  height: auto;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.body-content {
+  display: block;
+	width: 32em;
+	float: right;
+}
+
+
+/*
+.section-number {
+  background-image: url("images/bg-img.png");
+  background-repeat: no-repeat;
+  display: block;
+	float: left;
+  font-weight: bold;
+  padding-right: 1em;
+} */
+
+/* Nav/ header */
+.home-links {
+  font-size: 1.2em;
+}
+
+header p {
+	float: left;
+	font-weight: bold;
+}
+
+/* Typography */
+a {
+  color: #005EA5;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid #005EA5;
+}
+
+a:visited {
+  color: #6199C4;
+  border-bottom: 1px solid #6199C4;
+}
+p {
+	font-size: 1.2em;
+	padding-bottom: 1em;
+}
+
+H1 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+H2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.2em;
+	font-weight: bold;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/* .intro {
+  float: left;
+  padding-top: 3em;
+  max-width: 33em;
+  font-size: 1.3em;
+} */
+
+.page-intro {
+  padding-top: 2em;
+  max-width: 33em;
+  font-size: 1.3em;
+  margin-bottom: 2em;
+}
+
+.big {
+	font-size: 2.5em;
+	line-height: 1.2em;
+	font-weight: bold;
+	color: #6199C4;
+}
+
+.big-alt {
+	font-size: 2.5em;
+	line-height: 1.2em;
+	font-weight: bold;
+	color: black;
+}
+
+li span {
+  color: black;
+}
+
+/* FOOTER */
+footer p {
+  font-size: 1.2em;
+}
+
+/* INCLUDE Publishing type table */
+.publishing-apps-container {
+	display: block;
+	height: 250px;
+	border-bottom: 1px solid black;
+	position: relative;
+	bottom: 0;
+  margin-bottom: 2em;
+}
+
+
+.publishing-apps {
+	position: absolute;
+	bottom: 0;
+	float: left;
+	text-align: left;
+	font-size: 0.7em;
+  line-height: 1.1em;
+  width: 30em;
+}
+
+.publishing-apps th {
+		vertical-align: bottom;
+		padding: 0 0 10px 10px;
+}
+
+.publishing-apps td {
+		border-top: 1px solid black;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		vertical-align: top;
+		padding: 10px;
+		height: 180px;
+}
+
+.personal {
+	width: 71%;
+	background-color: black;
+	color: white;
+}
+
+.professional {
+	width: 29%;
+	background-color: white;
+}
+
+/* Content types table */
+.content-types table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 38.3em;
+  float: right;
+  margin-bottom: 2em;
+
+}
+
+.content-types p, h3, h4 {
+	font-size: 0.7em;
+	line-height: 1.1em;
+	padding-bottom: 0;
+}
+
+.content-types th, td {
+	border-left: 1px solid black;
+	vertical-align: bottom;
+	padding-left: 0.5em;
+}
+
+.content-types th {
+	font-weight: bold;
+}
+
+/* INCLUDE Job stories */
+.job-stories-container {
+  padding-top: 2em;
+}
+
+.job-stories {
+	width: 100%;
+	float: right;
+	text-align: left;
+  padding-bottom: 1em;
+}
+
+/* Job stories without the period */
+.job-stories ol {
+font-size: 2.5em;
+color: #6199C4;
+font-weight: bold;
+counter-reset: item;
+list-style-type: none;
+}
+
+.job-stories li {
+display: block;
+}
+
+.job-stories li:before {
+content: counter(item, upper-alpha) " ";
+counter-increment: item;
+margin-left: -1em;
+}
+
+/* User journey */
+.user-journey {
+  margin-bottom: 2em;
+}
+
+/* INCLUDE research */
+.research {
+	display: block;
+	height: 400px;
+	background-color: #6199C4;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.research img {
+	display: block;
+	vertical-align: middle;
+}
+
+
+/* Page design / layout */
+
+.page-layout ol {
+  padding-top: 2em;
+	list-style-type: decimal;
+	list-style-position: outside;
+	font-size: 0.7em;
+  color: #6199C4;
+  padding-bottom: 5em;
+}
+
+.page-layout img {
+  max-width: 53.7em;
+  float: right;
+  margin-bottom: 2em;
+}
+
+
+/* 12 column grid */
+
+/* .col-12 {
+	width: 100%;
+}
+
+.col-11 {
+  	width: 91.66%;
+}
+.col-10 {
+  	width: 83.33%;
+}
+
+.col-9 {
+  	width: 75%;
+}
+
+.col-8 {
+  	width: 66.66%;
+}
+
+.col-7 {
+  	width: 58.33%;
+}
+
+.col-6 {
+  	width: 50%;
+}
+
+.col-5 {
+  	width: 41.66%;
+}
+
+.col-4 {
+  	width: 33.33%;
+}
+
+.col-3 {
+  	width: 25%;
+}
+
+.col-2 {
+  	width: 16.66%;
+}
+
+.col-1 {
+  	width: 8.333%;
+} */
+
+
+/* RESPONSIVE TYPE */
+/* @media screen and (max-width: 50em) {
+  body { font-size: 90%;}
+} */
+
+/*  */
+@media only screen and (max-width: 650px) {
+    body { font-size: 90%;}
+
+    .grid {
+      margin: 0 3em 0 3em;
+    }
+
+    .body-content {
+      width: 100%;
+      float: left;
+    }
+
+    .job-stories-container {
+      margin-left: 2.5em;
+    }
+
+    .page-layout ol {
+      list-style-position: inside;
+    }
+
+    .content-types table {
+      width: 20em;
+      float: left;
+    }
+
+    .content-types td {
+      display: block;
+      width: 100%;
+      align: left;
+      vertical-align: top;
+      padding-bottom: 0.8em;
+  }
+    .content-types th {
+      vertical-align: top;
+      padding-top: 0.85em;
+    }
+
+    .content-types h3 {
+      padding-bottom: 3em;
+
+    }
+
+  .content-types p {
+    /* font sizes */
+    padding-bottom: 1.1em;
+  }

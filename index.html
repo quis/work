@@ -1,0 +1,12 @@
+---
+layout: default
+<!-- title: Mia Allers -->
+---
+
+
+{% for post in site.posts %}
+    <div class="home-links">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <!-- <div>{{ post.thumbnail }}</div> -->
+    </div>
+{% endfor %}
