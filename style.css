@@ -10,6 +10,8 @@ body {
   padding: 0;
   font-size:100%;
   line-height:1.5;
+  margin: auto;
+  max-width: 960px;
 }
 
 
@@ -30,19 +32,22 @@ img {
 
 header {
   padding-top: 30px;
+  display: block;
+  clear: both;
+  height: 3em;
+  width: 100%;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+  max-width: 960px;
 }
 
-header p::after {
-  content: " — ";
-  padding-right: 0.2em;
-}
 
 /* MAIN WRAPPER */
-main {
+/* main {
   background-color: white;
   margin: auto;
   max-width: 960px;
-}
+} */
 
 /* Floats */
 
@@ -60,7 +65,7 @@ main {
 
 /* .grid wraps row elements with a left and right margin */
 .grid {
-  margin: 0 3em 0 3em;
+  margin: 0 50px 0 50px;
 }
 
 /* Rows create new rows of content */
@@ -79,15 +84,7 @@ main {
 }
 
 
-/*
-.section-number {
-  background-image: url("images/bg-img.png");
-  background-repeat: no-repeat;
-  display: block;
-	float: left;
-  font-weight: bold;
-  padding-right: 1em;
-} */
+
 
 /* Nav/ header */
 .home-links {
@@ -374,7 +371,7 @@ margin-left: -1em;
     body { font-size: 90%;}
 
     .grid {
-      margin: 0 3em 0 3em;
+      margin: 0 20px 0 20px;
     }
 
     .body-content {
@@ -382,8 +379,16 @@ margin-left: -1em;
       float: left;
     }
 
+    .publishing-apps {
+      max-width: 100%;
+    }
+
     .job-stories-container {
-      margin-left: 2.5em;
+      margin-left: 2em;
+    }
+
+    .job-stories ol {
+      font-size: 2em;
     }
 
     .page-layout ol {
@@ -391,7 +396,8 @@ margin-left: -1em;
     }
 
     .content-types table {
-      width: 20em;
+      max-width: 100%;
+
       float: left;
     }
 
@@ -412,7 +418,8 @@ margin-left: -1em;
 
     }
 
-  .content-types p {
-    /* font sizes */
-    padding-bottom: 1.1em;
+    .content-types p {
+      /* font sizes */
+      padding-bottom: 1.1em;
+    }
   }
